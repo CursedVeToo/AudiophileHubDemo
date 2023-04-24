@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Audiophile Club - Login</title>
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <nav>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="../main-html/index.html">Home</a></li>
+                  <li><a class="menu__item" href="../main-html/about.html">About Us</a></li>
+              </div>
+            <ul>
+                <li><a href="create-account.html">Create an Account</a></li>
+        </nav>
+    </header>
+    <!-- Main content -->
+    <main>
+        <center><h1>Login to the site</h1></center>
+        <div class="image">
+          <center><img id="eyes-opened" src="../img/login/eyes-opened.jpg" height="250px"></center>
+        </div>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="login-message" style="display: none;">Login successful!<br><a href="index.html">Go to Homepage</a></p>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Audiophile Club.</p>
+    </footer>
+    <script src="../js/login.js"></script>
+</body>
+</html>

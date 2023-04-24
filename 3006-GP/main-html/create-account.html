@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/login.css">
+        <title>Audiophile Club - Login</title>
+    </head>
+    <body>
+        <!-- Header with navigation -->
+        <header>
+            <nav>
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                      <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="../main-html/index.html">Home</a></li>
+                        <li><a class="menu__item" href="../main-html/about.html">About Us</a></li>
+                    </ul>
+                  </div>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+            </nav>
+        </header>
+    <main>
+        <center><img id="eyes-closed" src="../img/login/eyes-closed.jpg" height="250px"></center>
+        <center><div class="form-container">
+            <h2>Create Account</h2>
+            <form id="create-account-form">
+                <label for="new-username">Username:</label>
+                <br>
+                <input type="text" id="new-username" name="new-username" required>
+                <br>
+                <label for="new-email">Email:</label>
+                <br>
+                <input type="email" id="new-email" name="new-email" required>
+                <br>
+                <label for="new-password">Password:</label>
+                <br>
+                <input type="password" id="new-password" name="new-password" required>
+                <br>
+                <label for="confirm-password">Confirm Password:</label>
+                <br>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <br>
+                <br>
+                <button type="submit">Create Account</button>
+            </form>
+            <p id="account-message" style="display: none;">Account created successfully!</p>
+        </div></center>
+    </main>
+    <footer>
+        <p>&copy; 2023 Audiophile Club.</p>
+    </footer>
+    <script src="js/create-account.js"></script>
+</body>
+</html>
